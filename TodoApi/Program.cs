@@ -1,10 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+
+using TodoApi.Model;
+using TodoApi.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+
+var dbmsVersion = new MariaDbServerVersion(builder.Configuration.GetValue<string>("DBMSVersion"));
+var connString = builder.Configuration.GetConnectionString("TodoDbContext");
+
+builder.Services.AddDbContext<TodoDbContext>(opt => opt.UseMySql(connString, dbmsVersion));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
@@ -21,5 +31,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
 
 app.Run();
