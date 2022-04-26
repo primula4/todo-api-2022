@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\server\\TodoApi\\TodoApi.csproj": {}
+    "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\TodoApi\\TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\server\\TodoApi\\TodoApi.csproj": {
+    "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\TodoApi\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\server\\TodoApi\\TodoApi.csproj",
+        "projectUniqueName": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\TodoApi\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\server\\TodoApi\\TodoApi.csproj",
+        "projectPath": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\TodoApi\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\ranas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\server\\TodoApi\\obj\\",
+        "outputPath": "C:\\Users\\ranas\\OneDrive\\Documents\\her2022\\X22 - Advanced Web Applications\\todo-api-2022\\TodoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ranas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
