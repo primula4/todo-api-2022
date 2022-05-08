@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    background-color: rgb(171, 132, 208);
+}
+
+#items .completetrue {
+    color: lightgray;
+    background-color: rgb(234, 185, 219);
+}
