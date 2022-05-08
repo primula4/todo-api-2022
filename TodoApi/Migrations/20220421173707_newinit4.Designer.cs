@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TodoApi.Model;
 
@@ -10,9 +11,10 @@ using TodoApi.Model;
 namespace TodoApi.Migrations
 {
     [DbContext(typeof(TodoDbContext))]
-    partial class TodoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220421173707_newinit4")]
+    partial class newinit4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,9 +38,6 @@ namespace TodoApi.Migrations
 
                     b.Property<uint>("Priority")
                         .HasColumnType("int unsigned");
-
-                    b.Property<decimal>("Reward")
-                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("Task")
                         .HasColumnType("longtext");
